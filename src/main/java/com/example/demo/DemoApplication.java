@@ -8,7 +8,11 @@ public class DemoApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
+		double number = Math.random();
+		System.out.println(number);
 	}
+
+
 
 }
 
