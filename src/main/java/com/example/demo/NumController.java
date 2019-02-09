@@ -1,13 +1,16 @@
 package com.example.demo;
 
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 class NumController {
 
-	@PostMapping("/num")
-	int newEmployee(int num) {
-		return num;
+	@CrossOrigin
+	@GetMapping("/num")
+	double newNum() {
+		return Math.random();
 	}
 
 }
